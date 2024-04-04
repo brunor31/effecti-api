@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+
+  postgres:
+    image: 'postgres:latest'
+    container_name: db
+    environment:
+      - 'POSTGRES_DB=licitacoes'
+      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_USER=postgres'
+    ports:
+      - '5432:5432'
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres:
