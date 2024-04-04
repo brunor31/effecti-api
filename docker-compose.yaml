@@ -6,8 +6,8 @@ services:
     image: 'postgres:latest'
     container_name: db
     environment:
-      - 'POSTGRES_DB=licitacoes'
-      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_DB=effecti'
+      - 'POSTGRES_PASSWORD=password'
       - 'POSTGRES_USER=postgres'
     ports:
       - '5432:5432'
