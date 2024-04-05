@@ -11,16 +11,17 @@ e após logar e adicionar o token no authorized, os 2 endpoints já possuem exem
 
 Tecnologias utilizadas - 
 
-1 - Spring Boot 
-2 - Spring Data JPA
-3 - Spring Security
-4 - Spring DevTools (Desenvolvimento)
-5 - Spring Docs
-6 - Spring support for compose
-7 - Bean Validation
-8 - Lombok
-9 - Flyway
-10 - JUnit
-11 - Mockito
+1 - Spring Boot <br>
+2 - Spring Data JPA <br>
+3 - Spring Security <br>
+4 - Spring DevTools (Desenvolvimento) <br>
+5 - Spring Docs <br>
+6 - Spring support for compose <br>
+7 - Bean Validation <br>
+8 - Lombok <br>
+9 - Flyway <br>
+10 - JUnit <br>
+11 - Mockito <br>
+
 
 
