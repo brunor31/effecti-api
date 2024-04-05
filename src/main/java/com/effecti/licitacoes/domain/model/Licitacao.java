@@ -13,7 +13,6 @@ import java.util.List;
 public class Licitacao {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
     private String objeto;
@@ -35,5 +34,7 @@ public class Licitacao {
     private List<ItemEdital> itens;
     @OneToMany(mappedBy = "licitacao")
     private List<Anexo> anexos;
+    @OneToMany(mappedBy = "licitacao")
+    private List<Palavra> palavraEncontradas;
 
 }

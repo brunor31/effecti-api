@@ -5,10 +5,10 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+@Entity
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Entity
-public class Anexo {
+public class Palavra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
@@ -17,6 +17,5 @@ public class Anexo {
     @JoinColumn(name = "idLicitacao")
     @JsonIgnore
     private Licitacao licitacao;
-    private String nome;
-    private String url;
+    private String descricao;
 }
