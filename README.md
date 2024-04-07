@@ -1,26 +1,32 @@
 API desenvolvida para o teste técnico da empresa effecti
 
-Para buildar o projeto basta rodar o comando na raiz do projeto pelo terminal ou IDE (necessário docker instalado).<br>
-```bash
-docker-compose up -d
-```
-O endpoint de listagem de licitaçöes está protegido por token jwt com spring security, sendo necessário criar um novo usuário
-para logar e acessar o recurso, os 2 endpoints já possuem exemplos, sendo ncessário somente enviar a request.
+<strong>Requisitos:</strong>
 
-Endereço para documentação no swagger.
-```bash
-http://localhost:8000
-````
+* Docker instalado
 
-Tecnologias utilizadas - 
+<strong>Como executar:</strong>
 
-1 - Spring Boot <br>
-2 - Spring Data JPA <br>
-3 - Spring Security <br>
-4 - Spring DevTools (Desenvolvimento) <br>
-5 - Spring Docs <br>
-6 - Spring support for compose <br>
-7 - Bean Validation <br>
-8 - Lombok <br>
+1. Na raiz do projeto, execute ```docker-compose up -d``` para iniciar a API.
+2. Acesse a documentação da API no Swagger: http://localhost:8000
 
+<strong>Funcionalidades:</strong>
 
+* Criação de usuários
+* Login
+* Listagem de licitações (protegido por token JWT)
+
+<strong>Tecnologias utilizadas:</strong>
+* Spring Boot
+* Spring Data JPA
+* Spring Security
+* Spring DevTools (Desenvolvimento)
+* Spring Docs
+* Spring support for compose
+* Bean Validation
+* Lombok
+
+End-points:
+
+* POST /api/auth/register (Cria um novo usuário)
+* POST /api/auth/login (Login)
+* GET /api/licitacoes (Lista licitações)
