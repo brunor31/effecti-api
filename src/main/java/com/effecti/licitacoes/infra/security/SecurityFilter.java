@@ -1,6 +1,6 @@
 package com.effecti.licitacoes.infra.security;
 
-import com.effecti.licitacoes.domain.repository.UsuarioRepository;
+import com.effecti.licitacoes.repository.UsuarioRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

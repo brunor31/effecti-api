@@ -1,4 +1,4 @@
-package com.effecti.licitacoes.domain.model;
+package com.effecti.licitacoes.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,7 +1,7 @@
 package com.effecti.licitacoes.api.controller;
 
-import com.effecti.licitacoes.domain.model.Licitacao;
-import com.effecti.licitacoes.domain.service.LicitacaoService;
+import com.effecti.licitacoes.domain.Licitacao;
+import com.effecti.licitacoes.service.LicitacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;

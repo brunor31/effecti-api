@@ -1,7 +1,7 @@
-package com.effecti.licitacoes.domain.service;
+package com.effecti.licitacoes.service;
 
-import com.effecti.licitacoes.domain.model.Licitacao;
-import com.effecti.licitacoes.domain.repository.LicitacaoRepository;
+import com.effecti.licitacoes.domain.Licitacao;
+import com.effecti.licitacoes.repository.LicitacaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
