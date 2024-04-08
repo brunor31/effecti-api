@@ -1,14 +1,15 @@
-package com.effecti.licitacoes.domain.model;
+package com.effecti.licitacoes.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-@Entity
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Palavra {
+@Entity
+public class ItemEdital {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
@@ -17,5 +18,11 @@ public class Palavra {
     @JoinColumn(name = "idLicitacao")
     @JsonIgnore
     private Licitacao licitacao;
-    private String descricao;
+    private Integer item;
+    private String lote;
+    private String diferenciado;
+    private String produtoLicitado;
+    private String unidade;
+    private Long quantidade;
+    private Integer decreto7174;
 }

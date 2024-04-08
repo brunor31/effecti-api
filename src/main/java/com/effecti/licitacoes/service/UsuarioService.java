@@ -1,15 +1,17 @@
-package com.effecti.licitacoes.domain.service;
+package com.effecti.licitacoes.service;
 
 import com.effecti.licitacoes.api.model.UsuarioRequestDTO;
 import com.effecti.licitacoes.api.model.UsuarioResponseDTO;
-import com.effecti.licitacoes.domain.model.Usuario;
-import com.effecti.licitacoes.domain.repository.UsuarioRepository;
+import com.effecti.licitacoes.domain.Usuario;
+import com.effecti.licitacoes.repository.UsuarioRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class UsuarioService {
 
     @Autowired

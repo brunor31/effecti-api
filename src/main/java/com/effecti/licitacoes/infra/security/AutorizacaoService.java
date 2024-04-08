@@ -1,6 +1,6 @@
 package com.effecti.licitacoes.infra.security;
 
-import com.effecti.licitacoes.domain.repository.UsuarioRepository;
+import com.effecti.licitacoes.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

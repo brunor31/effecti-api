@@ -1,6 +1,6 @@
-package com.effecti.licitacoes.domain.repository;
+package com.effecti.licitacoes.repository;
 
-import com.effecti.licitacoes.domain.model.Licitacao;
+import com.effecti.licitacoes.domain.Licitacao;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

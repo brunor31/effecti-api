@@ -1,4 +1,4 @@
-package com.effecti.licitacoes.domain.model;
+package com.effecti.licitacoes.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
